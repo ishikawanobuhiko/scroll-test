@@ -18,6 +18,8 @@ p{
     height: 600px;
     margin-bottom: 24px;
     padding: 16px;
+    transition: transform 1.2s ease-in-out;
+    
 }
 .box1 {
     background: #219c90;
@@ -31,7 +33,10 @@ p{
 .box4 {
     background: #ee9322;
 }
-.box{
+.box:nth-child(even){
+    transform: translateX(-400%);
+}
+.box:nth-child(odd){
     transform: translateX(400%);
 }
 .box.show {
